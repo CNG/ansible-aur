@@ -100,7 +100,7 @@ def main():
                 'choices': ['auto', 'aurman', 'pacaur', 'trizen', 'pikaur', 'yaourt', 'yay', 'internal'],
             },
             'skip_installed': {
-                'default': 'no',
+                'default': 'yes',
                 'type': 'bool',
             },
         },
