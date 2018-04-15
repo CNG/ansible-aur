@@ -75,7 +75,7 @@ def install_packages(module, packages, use, skip_installed):
             rc, out, err = install_internal(module, package)
         else:
             rc, out, err = module.run_command(def_lang + use_cmd[use] + [package], check_rc=True)
-        changed_iter = changed_iter or not (out == '' or '-- skipping' in out or 'there is nothing to do' in out)
+        changed_iter = changed_iter or not (out == '' or '-- skipping' in out or 'nothing to do' in out)
 
     module.exit_json(
         changed=changed_iter,
